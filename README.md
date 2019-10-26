@@ -1,8 +1,16 @@
-# Singularity config for gsea container
+# Docker/Singularity definition for gsea container
 
-A [Singularity Hub](https://www.singularity-hub.org/) definition.
+## Docker
 
-If [Singularity](http://singularity.lbl.gov) is installed locally, the container can be build (needs root access) locally like this:
+```bash
+docker pull sebio/gsea
+```
+
+## Singularity
+
+A [Singularity Hub](https://www.singularity-hub.org/) definition build on version 3.
+
+If [Singularity](https://sylabs.io/docs/) is installed locally, the container can be build (needs root access) locally like this:
 
 ```bash
 sudo singularity build gsea.simg Singularity > build.log 2>&1
